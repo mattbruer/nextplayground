@@ -41,7 +41,7 @@ export default function Home(props) {
 
 export async function getStaticProps() {
   const tables = await fetchTables();
-  console.log(tables);
+
   return {
     props: { tables },
   };

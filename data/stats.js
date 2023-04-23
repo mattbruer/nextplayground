@@ -3,7 +3,10 @@ import axios from 'axios';
 
 export default async function fetchTables() {
   try {
+    //Swap out urls below for different tables
+
     const { data } = await axios.get(
+      //https://www.maxpreps.com/in/alexandria/alexandria-monroe-tigers/athletes/gabe-mcguire/football/stats/?careerid=v9bof4vgp73dd
       'https://www.maxpreps.com/in/alexandria/alexandria-monroe-tigers/athletes/gabe-mcguire/baseball/stats/?careerid=v9bof4vgp73dd'
     );
     const tableData = [];
